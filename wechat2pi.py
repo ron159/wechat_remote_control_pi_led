@@ -4,7 +4,7 @@ import led
 
 @itchat.msg_register(itchat.content.TEXT)
 def text_reply(msg):
-    if msg['Text'] == "闪一闪":
+    if "闪一闪" in msg['Text']:
     #led.openLed()
     #print(msg.text)
         reply_content = "正在闪一闪"
